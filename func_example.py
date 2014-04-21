@@ -9,8 +9,10 @@ def mygauss(x,cent=0,sig=0.1):
     y=1+y/numpy.sqrt(2*numpy.pi*sig**2)
     return y
 
+print __name__
 #only run this part if script is executed
 if __name__ == "__main__":
+
     dx=0.1
     x=numpy.arange(-5,5,dx)
     y=mygauss(x,0,1)
